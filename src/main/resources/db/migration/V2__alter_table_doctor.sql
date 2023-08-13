@@ -1,0 +1,1 @@
+ALTER table doctor add phone_number varchar(10) not null;
