@@ -1,8 +1,7 @@
-package med.star.api.records.doctor.response;
+package med.star.api.domain.doctor.response;
 
-import lombok.AllArgsConstructor;
-import med.star.api.model.Doctor;
-import med.star.api.records.doctor.request.MedSpecialty;
+import med.star.api.domain.doctor.Doctor;
+import med.star.api.domain.doctor.request.MedSpecialty;
 
 
 public record DoctorResponse(Long id, String name, MedSpecialty medSpecialty, String email, String phoneNumber, boolean isActive){

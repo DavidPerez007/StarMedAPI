@@ -1,7 +1,8 @@
-package med.star.api.records.doctor.request;
+package med.star.api.domain.doctor.request;
 
 import jakarta.persistence.Embedded;
 import jakarta.validation.constraints.*;
+import med.star.api.domain.address.AddressData;
 
 public record DoctorData(
         @NotBlank

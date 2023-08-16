@@ -1,4 +1,4 @@
-package med.star.api.records.patient.request;
+package med.star.api.domain.patient.request;
 
 public enum GenderData {
     MALE,

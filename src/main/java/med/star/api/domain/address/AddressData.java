@@ -1,4 +1,4 @@
-package med.star.api.records.doctor.request;
+package med.star.api.domain.address;
 
 import jakarta.validation.constraints.NotBlank;
 public record AddressData(

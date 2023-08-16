@@ -1,7 +1,6 @@
-package med.star.api.records.patient.response;
+package med.star.api.domain.patient.response;
 
-import med.star.api.model.Patient;
-import med.star.api.repository.PatientRepository;
+import med.star.api.domain.patient.Patient;
 
 public record PatientResponse(String name, String lastname, int age, String email) {
     public PatientResponse(Patient patient){

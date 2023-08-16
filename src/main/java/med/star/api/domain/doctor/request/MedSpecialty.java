@@ -1,4 +1,4 @@
-package med.star.api.records.doctor.request;
+package med.star.api.domain.doctor.request;
 
 
 

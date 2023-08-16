@@ -1,10 +1,9 @@
-package med.star.api.records.patient.request;
+package med.star.api.domain.patient.request;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import med.star.api.records.doctor.request.AddressData;
-import med.star.api.records.patient.request.GenderData;
+import med.star.api.domain.address.AddressData;
 
 public record PatientData(
         @NotBlank

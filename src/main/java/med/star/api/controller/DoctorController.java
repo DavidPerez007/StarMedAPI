@@ -1,10 +1,10 @@
 package med.star.api.controller;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import med.star.api.model.Doctor;
-import med.star.api.records.doctor.request.DoctorData;
-import med.star.api.records.doctor.request.UpdateDoctorData;
-import med.star.api.records.doctor.response.DoctorResponse;
+import med.star.api.domain.doctor.Doctor;
+import med.star.api.domain.doctor.request.DoctorData;
+import med.star.api.domain.doctor.request.UpdateDoctorData;
+import med.star.api.domain.doctor.response.DoctorResponse;
 import med.star.api.repository.DoctorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -32,7 +32,6 @@ public class DoctorController {
     @GetMapping
     public Page<DoctorResponse> getAllDoctors(@PageableDefault(size = 2, sort = "name") Pageable page){
         Page<DoctorResponse> doctors = this.doctorRepository.findByIsActiveTrue(page).map(DoctorResponse::new);
-
         return doctors;
     }
     @GetMapping("/{id}")

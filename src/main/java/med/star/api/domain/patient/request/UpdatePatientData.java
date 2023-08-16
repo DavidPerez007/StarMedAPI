@@ -1,9 +1,8 @@
-package med.star.api.records.patient.request;
+package med.star.api.domain.patient.request;
 
 import jakarta.validation.constraints.NotNull;
-import med.star.api.model.Address;
-import med.star.api.model.Patient;
-import med.star.api.records.patient.request.GenderData;
+import med.star.api.domain.address.Address;
+import med.star.api.domain.patient.Patient;
 
 public record UpdatePatientData(@NotNull Long id, Integer age, GenderData gender, String email, Address address) {
     public UpdatePatientData(Patient patient){

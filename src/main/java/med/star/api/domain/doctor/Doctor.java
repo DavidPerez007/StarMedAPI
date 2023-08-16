@@ -1,11 +1,12 @@
-package med.star.api.model;
+package med.star.api.domain.doctor;
 
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import med.star.api.records.doctor.request.DoctorData;
-import med.star.api.records.doctor.request.MedSpecialty;
-import med.star.api.records.doctor.request.UpdateDoctorData;
+import med.star.api.domain.address.Address;
+import med.star.api.domain.doctor.request.DoctorData;
+import med.star.api.domain.doctor.request.MedSpecialty;
+import med.star.api.domain.doctor.request.UpdateDoctorData;
 
 @Entity(name = "Doctor")
 @Data

@@ -1,9 +1,8 @@
-package med.star.api.model;
+package med.star.api.domain.address;
 
 import jakarta.persistence.Embeddable;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import med.star.api.records.doctor.request.AddressData;
 
 @NoArgsConstructor
 @Data

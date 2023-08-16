@@ -1,6 +1,6 @@
 package med.star.api.repository;
 
-import med.star.api.model.Patient;
+import med.star.api.domain.patient.Patient;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
