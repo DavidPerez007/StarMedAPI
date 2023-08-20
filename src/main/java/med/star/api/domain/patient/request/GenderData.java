@@ -3,6 +3,6 @@ package med.star.api.domain.patient.request;
 public enum GenderData {
     MALE,
     FEMALE,
-    NO_BINARY,
+    ID_RATHER_NOT_TO_SAY_IT,
     TO_BE_CONTINUED
 }
